@@ -43,3 +43,15 @@ your.downloaders.cobalt({
      console.log(result)
 })
 ```
+
+
+## RELIGION MENU
+
+### ```Alkitab```
+``` 
+const your = require('your-api')
+
+your.alkitab.fetchChapters('tb', 'mat', 4, 4).then(result => {
+     console.log(result)
+})
+```
