@@ -31,7 +31,7 @@ your.ai.blackbox('halo'))
 
 ## DOWNLOAD MENU
 
-### ```COBALT```
+### ```COBALT```(error)
 ``` 
 const your = require('your-api')
 
@@ -51,7 +51,28 @@ your.downloaders.cobalt({
 ``` 
 const your = require('your-api')
 
-your.alkitab.fetchChapters('tb', 'mat', 4, 4).then(result => {
+your.religion.alkitab.fetchChapters('tb', 'mat', 4, 4).then(result => {
+     console.log(result)
+})
+```
+
+
+## SEARCHING MENU
+
+### ```tvOne Search```
+``` 
+const your = require('your-api')
+
+your.search.tvOneSearch('indonesia').then(result => {
+     console.log(result)
+})
+```
+
+### ```tvOne Latest```
+``` 
+const your = require('your-api')
+
+your.search.tvOneLatest().then(result => {
      console.log(result)
 })
 ```
