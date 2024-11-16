@@ -22,27 +22,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Check for version change
-        id: check_version
-        run: |
-          CURRENT_VERSION=$(node -p "require('./package.json').version")
-         
-          LAST_VERSION=$(npm show ${GITHUB_REPOSITORY#*/} version)
-          
-          echo "Current version: $CURRENT_VERSION"
-          echo "Last version: $LAST_VERSION"
-          
-          # Bandingkan versi
-          if [ "$CURRENT_VERSION" != "$LAST_VERSION" ]; then
-            echo "Version has changed."
-            echo "::set-output name=publish::true"
-          else
-            echo "Version has not changed."
-            echo "::set-output name=publish::false"
-          fi
-
       - name: Publish to npm
-        if: steps.check_version.outputs.publish == 'true'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npm publish
