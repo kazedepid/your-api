@@ -11,16 +11,16 @@
 </p>
 
 ## ```INSTALL And UNINSTALL```
-> npm install @kazedepid/your-api
+> npm install your-api
 >  
-> npm uninstall @kazedepid/your-api
+> npm uninstall your-api
 
 
 ## AI MENU
 
 ### ```BLACKBOX```
 ``` 
-const your = require('@kazedepid/your-api')
+const your = require('your-api')
 
 your.ai.blackbox('halo'))
     .then(result => {
@@ -33,7 +33,7 @@ your.ai.blackbox('halo'))
 
 ### ```COBALT```
 ``` 
-const your = require('@kazedepid/your-api')
+const your = require('your-api')
 
 your.downloaders.cobalt({
  url: "https://www.tiktok.com/@gawrgura/video/7213728634132073734",
