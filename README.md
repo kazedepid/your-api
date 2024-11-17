@@ -22,7 +22,7 @@
 ``` 
 const your = require('your-api')
 
-your.ai.blackbox('halo'))
+your.ai.blackbox('halo')
     .then(result => {
      console.log(result)
 })
