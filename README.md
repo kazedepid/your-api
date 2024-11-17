@@ -22,7 +22,7 @@
 ``` 
 const your = require('your-api')
 
-your.ai.blackbox('halo'))
+your.ai.blackbox('halo')
     .then(result => {
      console.log(result)
 })
@@ -73,6 +73,38 @@ your.search.tvOneSearch('indonesia').then(result => {
 const your = require('your-api')
 
 your.search.tvOneLatest().then(result => {
+     console.log(result)
+})
+```
+
+### ```Random Cerpen```
+``` 
+const your = require('your-api')
+
+your.search.randomCerpen().then(result => {
+     console.log(result)
+})
+```
+
+
+## TOOLS MENU
+
+### ```TTP```
+``` 
+const your = require('your-api')
+
+your.tools.ttp('hello world')
+    .then(result => {
+     console.log(result)
+})
+```
+
+### ```ShortUrl```
+``` 
+const your = require('your-api')
+
+your.tools.shortenUrl('https://github.com/kazedepid')
+    .then(result => {
      console.log(result)
 })
 ```
