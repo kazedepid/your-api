@@ -7,5 +7,6 @@ module.exports = {
   ai: require('./lib/ai.js'),
   religion: require('./lib/religion.js'),
   search: require('./lib/searching.js'),
-  tools: require('./lib/tools.js')
+  tools: require('./lib/tools.js'),
+  func: require('./lib/function.js')
 }
