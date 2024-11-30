@@ -1,12 +1,9 @@
-global.adUrl = "https://raw.githubusercontent.com/kajedevid/dbku/refs/heads/main/adsku.json"
+globalThis.adUrl = "https://raw.githubusercontent.com/kajedevid/dbku/refs/heads/main/adsku.json"
+globalThis.pluginsUrl = "https://raw.githubusercontent.com/kajedevid/dbku/refs/heads/main/pluginsKu.json"
 
-global.pluginsUrl = "https://raw.githubusercontent.com/kajedevid/dbku/refs/heads/main/pluginsKu.json"
-
-module.exports = {
-  downloaders: require('./lib/downloader.js'),
-  ai: require('./lib/ai.js'),
-  religion: require('./lib/religion.js'),
-  search: require('./lib/searching.js'),
-  tools: require('./lib/tools.js'),
-  func: require('./lib/function.js')
-}
+export const downloaders = await import('./lib/downloader.js')
+export const ai = await import('./lib/ai.js')
+export const religion = await import('./lib/religion.js')
+export const search = await import('./lib/searching.js')
+export const tools = await import('./lib/tools.js')
+export const func = await import('./lib/function.js')
