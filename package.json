@@ -1,6 +1,6 @@
 {
   "name": "your-api",
-  "version": "1.0.7-esm",
+  "version": "1.0.8-esm",
   "main": "index.js",
   "type": "module",
   "scripts": {
